@@ -21,7 +21,7 @@
     Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
     CCAction *_followPenguin;
-    static const float MIN_SPEED = 5.f;
+    //static const float MIN_SPEED = 5.f;
 }
 
 // is called when CCB file has completed loading
@@ -147,7 +147,7 @@
 - (void)update:(CCTime)delta
 {
     if (_currentPenguin.launched) {
-        if(ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED) {
+        if(ccpLength(_currentPenguin.physicsBody.velocity) < 5.f) {
             [self nextAttempt];
             return;
         }
