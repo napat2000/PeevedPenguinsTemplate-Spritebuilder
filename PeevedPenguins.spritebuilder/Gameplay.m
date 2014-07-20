@@ -6,9 +6,10 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
+#import "Penguin.h"
 #import "Gameplay.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
-#import "Penguin.h"
+
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
